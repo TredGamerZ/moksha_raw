@@ -1,0 +1,836 @@
+
+<!DOCTYPE html>
+<html style="height: 100%">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.1.1/masonry.pkgd.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/86/three.js"></script>
+    <link rel="icon" href="img/logo_m.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>Moksha'18 - Desi By Heart</title>
+
+<body class="w-100" >
+<style>
+    .bc-3{
+        background-color:#1e253e;
+    }
+    .fw{
+        color: white!important;
+    }
+</style>
+
+    <div class="container-fluid bc-3 p-0 m-0" style="" >
+
+        <video autoplay muted loop id="bg-vid" class="p-0 m-0" style="position: absolute;width: 100%;opacity: 0.2;background-blend-mode: luminosity;mix-blend-mode: luminosity" >
+            <source src="video/medium.webm">
+        </video>
+        <nav class="navbar navbar-toggleable-md navbar-inverse nav1" style="z-index: 989;background: transparent" >
+            <button class="navbar-toggler navbar-toggler-right" style="    position: absolute;
+                    border: none;
+                    top: 18px;"
+                    type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand" href="/">
+                <img src="img/logo_m.png" class="p-2" width="60px">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto  " style="font-size: 16px;color:white!important;">
+
+                    <li class="nav-item ">
+                        <a class="nav-link mr-5 fn1 fw " href="#about">About us </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link mr-5 fn1 fw " href="#events">Events</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link mr-5  fn1 fw " href="#sponsor" >Sponsors</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link mr-5  fn1 fw " href="#team" >Team</a>
+                    </li>
+                     <li class="nav-item ">
+                        <a class="nav-link mr-5  fn1 fw " href="#contact" >Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("March 14, 2018 09:00:00").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+                // Get todays date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now an the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Output the result in an element with id="demo"
+                document.getElementById("countdown").innerHTML =
+                    '<div class="timer"><div><h2>Days</h2><hr><span class="num">' + days + '</span></div>' +
+                    '<div><h2>Hours</h2><hr><span class="num">' + hours + '</span></div>' +
+                    '<div><h2>Minutes</h2><hr><span class="num">' + minutes + '</span></div>' +
+                    '<div><h2>Seconds</h2><hr><span class="num">' + seconds + '</span></div></div>';
+
+
+
+                // If the count down is over, write some text
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
+        <div class="row justify-content-center align-items-center w-100 " style="color: white">
+            <div class="col-xl-8 col-11 col-lg-10 col-md-10 pb-5 mb-5 text-center">
+                <!--<h1 class="fn1 display-3">MOKSHA 18</h1>-->
+
+                <img class="img-fluid mb-5" src="img/logo_w.png" width="250px">
+
+
+                <p id="countdown" class="fn1 mb-4">
+                </p>
+
+                <a href="#events" class="btn btn-red bc-1 f2">Register Now</a>&nbsp; &nbsp;
+                <button class="btn btn-white f2">Watch Video</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="background-color: white" id="about">
+         <div class="row justify-content-center py-5 my-5">
+             <div class="col-xl-8 col-lg-8 col-md-10 col-12">
+                <h1 class="fn1 c-theme-1">
+                    About Moksha
+                </h1>
+                 <p class="lead f2 c-theme-2 mt-5">
+                     Moksha is the annual inter-college cultural festival of Netaji Subhas Institute of Technology. Started in 2003, it is organized in the month of March. It is a four-day national extravaganza held every even semester of the academic year. It is considered to be one of the biggest cultural fests in north India & attracts sponsorships from top corporate houses of India including TCS, Intel and Airtel.
+                    <br><Br>
+                     Annually, Moksha presents a platform for the students to break free from their monotonous life. The fest has an average footfall of over 25000 people and a lineup of around 150 engaging events.
+                 </p>
+             </div>
+
+         </div>
+    </div>
+
+<!--<div class="container w-100 p-0 m-0" style="background-image: url('img/n-high.jpg');background-size: cover;background-blend-mode: luminosity;background-color: #0a072c;min-height: 600px;height: 100%">-->
+    <!--<div class="row  p-5 m-5" id="celeb-header">-->
+        <!--<div class="col-xl-5">-->
+            <!--<h1 class="fn1 fw w-75">What's hot this moksha</h1>-->
+            <!--<p class="lead f2 fw pt-5 mt-5">-->
+                <!--Phasellus eu iaculis velit. Proin id nunc nec felis aliquam posuere quis non justo. Aenean ut efficitur lectus. <br>-->
+                <!--Integer eleifend pretium turpis vel accumsan. In in eros id diam hendrerit pulvinar. Vivamus porttitor aliquet pretium. Vestibulum dictum consectetur urna sed suscipit.-->
+
+            <!--</p>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row  p-5 m-5" id="celeb-caro" >-->
+        <!--<div class="col-xl-3 col-lg-4 col-md-5 col-6">-->
+            <!--<div class="shadow-box" style="background-image:url('img/nucleya.jpeg');background-size: cover;background-position: center">-->
+
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-xl-3 col-lg-4 col-md-5 col-6">-->
+            <!--<div class="shadow-box"  style="background-image:url('img/abish.jpg');background-size: cover;background-position: center">-->
+
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+<!--</div>-->
+
+    <div class="container w-100 p-0 m-0" style="background-color: white" id="celeb">
+        <div class="row justify-content-center py-5 my-5 w-100" style="overflow: hidden">
+            <h1 class="fn1 fc-1">
+                Our Events
+
+            </h1>
+        </div>
+            <div class="row p-0 m-0 w-100"style="overflow-x: hidden" id="events" >
+            <div class="col-xl-6 col-lg-6 col-md-6 col-12 p-0 m-0 bg-event" id="ev-dance" >
+                <div class="event-box p-5 " style="color: white;background-image: url('img/ev-da.jpg')">
+                    <h1 class="fn1 p-5">Dance</h1>
+
+                    <p class="lead  f2  px-5">
+                        You don't need Cinderella 's charmed shoes to rock the ball, all you need is a dancer's soul.<br>
+                        If  you  love  groving to those dancing numbers,  then we have a brilliant stage set up for you!<br>
+                        Let the party begin!
+                    </p>
+                    <button class="btn btn-white mx-5" data-toggle="modal" data-target="#dance-modal" >More Info</button>
+
+
+
+                </div>
+            </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-6 col-12 p-0 m-0 bg-event" id="ev-drama" >
+                <div class="event-box p-5 " style="color: white;background-image: url('img/ev-d.jpg')">
+                    <h1 class="fn1 p-5">Drama</h1>
+                    <p class="lead  f2  px-5">
+                        "All the world's a stage"<Br>
+                        Bringing the legendary verse to life , Moksha '18 is welcoming all actors to  a grand  carnival of expressions, dialogues and drama.<br>
+                        If acting is your kingship then we will provide you, your kingdom.
+                    </p>
+                    <button class="btn btn-white mx-5" data-toggle="modal" data-target="#drama-modal">More Info</button>
+                </div>
+            </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-6 col-12 p-0 m-0 bg-event" id="ev-drama" >
+                <div class="event-box p-5 " style="color: white;background-image: url('img/ev-m.jpg')">
+                    <h1 class="fn1 p-5">informals</h1>
+                    <p class="lead f2 px-5">
+                        Dimmed lights , soft music and a perfect ambience for an amorous getaway; come with a casual friend or a date.<br>
+                        Don't get upset if you don't have a date cause you may find one too!<br>
+                        So, get in and explore!  </p>
+                    <button class="btn btn-white mx-5"  data-toggle="modal" data-target="#inf-modal" >More Info</button>
+                </div>
+            </div>
+
+             <div class="col-xl-6 col-lg-6 col-md-6 col-12 p-0 m-0 bg-event" id="ev-drama" >
+                <div class="event-box p-5 " style="color: white;background-image: url('img/ev-pr1.jpg')">
+                    <h1 class="fn1 p-5">Music</h1>
+                    <p class="lead  f2 px-5">
+                        If Music is the food to your soul,<br>
+                        then come and indulge in the grandest musical bonanza ever!<br>
+                        Moksha '18 presents to you a plethora of musical festivities.<br>
+                        Let not this rhythm of beats , go off beat. </p>
+                    <button class="btn btn-white mx-5"  data-toggle="modal" data-target="#music-modal">More Info</button>
+                </div>
+            </div>  <div class="col-xl-6 col-lg-6 col-md-6 col-12 p-0 m-0 bg-event" id="ev-drama" >
+                <div class="event-box p-5 " style="color: white;background-image: url('img/ev-liy.jpg')">
+                    <h1 class="fn1 p-5">Literary</h1>
+                    <p class="lead  f2 px-5">
+                        A quill is a knower of a writer's heart.<br>
+                        So, this Moksha '18 let your magical quill ,spill verses unsaid.<br>
+                        Join in ,to celebrate the mesmerizing art of writing.   </p>
+                    <button class="btn btn-white mx-5"  data-toggle="modal" data-target="#lit-modal">More Info</button>
+                </div>
+            </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-6 col-12 p-0 m-0 bg-event" id="ev-drama" >
+                <div class="event-box p-5 " style="color: white;background-image: url('img/ev-tal.jpg')">
+                    <h1 class="fn1 p-5">Talent Show Events</h1>
+                    <p class="lead  f2 px-5">
+                        Phasellus eu iaculis velit. Proin id nunc nec felis aliquam posuere quis non justo. Aenean ut efficitur lectus. <br>
+                        Integer eleifend pretium turpis vel accumsan. In in eros id diam hendrerit pulvinar. Vivamus porttitor aliquet pretium. Vestibulum dictum consectetur urna sed suscipit.
+                    </p>
+                    <button class="btn btn-white mx-5"  data-toggle="modal" data-target="#tal-modal">More Info</button>
+                </div>
+            </div>
+
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-12 p-0 m-0 bg-event" id="ev-drama" >
+                <div class="event-box p-5 " style="color: white;background-image: url('img/ev-g.jpg')">
+                    <h1 class="fn1 p-5">Gaming</h1>
+                    <p class="lead  f2 px-5">
+                        It's time to glorify those restless nights you've spent behind your gaming screens.<br>
+                        Moksha '18 calls out to all the enthusiastic gamers to prepare for the ultimate battle!  </p>
+                    <button class="btn btn-white mx-5"  data-toggle="modal" data-target="#ga-modal">More Info</button>
+                </div>
+            </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-12 p-0 m-0 bg-event" id="ev-drama" >
+                <div class="event-box p-5 " style="color: white;background-image: url('img/ev-a.jpg')">
+                    <h1 class="fn1 p-5">Automobile Show</h1>
+                    <p class="lead  f2 px-5">
+                        Roaring engines, fuming motorparts and  high octaned spirits of the audience. Sigh.<br>
+                        There is no word to describe the beauty of Motorsports. Just two words- Be There!  </p>
+                    <button class="btn btn-white mx-5"  data-toggle="modal" data-target="#at-modal">More Info</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+
+<style>
+    .event-box{
+        min-height: 500px;
+        mix-blend-mode: luminosity;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.8;
+    }
+
+    .bg-event{
+         overflow-x: hidden;
+        z-index: 1;
+
+        background: #0a072c;
+        -webkit-transition: background 1s ease-out;
+        -moz-transition: background 1s ease-out;
+        -o-transition: background 1s ease-out;
+        transition: background 1s ease-out;
+    }
+    .bg-event:hover{
+        background-image: linear-gradient(45deg, #4568dc, #b06ab3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .btn-white{
+        background: white;
+        border-radius: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-family: 'Quicksand', 'sans-serif';
+        color: darkslateblue;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+
+    }
+     .btn-red{
+        background-color: #f1445f;
+        color: white;
+         border-radius: 20px;
+         padding-left: 20px;
+         padding-right: 20px;
+         box-shadow: 0px 5px 10px rgba(241, 68, 95, 0.25);
+    }
+
+    .btn-white:hover,.btn-white:focus{
+        background: whitesmoke;
+        color: darkblue;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    .btn-red:hover,.btn-red:focus{
+        background: #972b3d;
+        color: white;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    }
+    .shadow-box{
+        width: 200px;
+        height: 200px;
+    }
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    @font-face{
+        font-family: 'Big John';
+        src:url('./big-john.otf')
+    }
+    @font-face{
+        font-family: 'Slim Joe';
+        src:url('./slim-joe.otf');
+    }
+    .timer{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        width: 60%;
+        margin: auto;
+        color: #f2f2f2;
+        opacity: .9;
+    }
+    #countdown{
+        text-align: center;
+    }
+    .timer h2{
+        text-align: center;
+        font-size:.9em;
+
+    }
+    .num{
+        font-size: 4em;
+        font-family: 'Big John';
+    }
+    hr{
+        border: none;
+        height: .1em;
+        color: #fff;
+        margin-bottom: 10px;
+        background-color: #fff;
+        display: none;
+    }
+
+    .logo-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+    }
+    .mok-logo{
+        height: 20em;
+        align-self: center;
+        margin-bottom: 1.5em;
+        margin-top: 1.5em;
+    }
+    .mok-desi{
+        height: 1.7em;
+        align-self: center;
+        margin-bottom: 1.5em;
+    }
+
+    .nos{
+        text-decoration: none!important;
+    }
+    @keyframes splash{
+        0%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(1.1);
+        }
+        100%{
+            transform: scale(1)
+        }
+    }
+
+    @keyframes hide{
+        0%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+    @media (max-width:900px){
+        .timer{
+            width: 20%;
+            flex-direction: column;
+        }
+        hr{
+            display: block;
+        }
+        .shader{
+            opacity: .2;
+        }
+    }
+
+    @keyframes Gradient {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }.show{
+         display: block !important;
+     }
+    .hide{
+        animation: hide 1s forwards;
+        display: none;
+    }
+    .hidden{
+        display: none;
+    }
+    .modal-content{
+        border: none;
+        background-color: #3b4356;
+        color:white;
+        border-radius: 0px;
+    }
+    .black-box{
+        background-color: #2f3446;
+    transition: all 0.4s ease;
+    }
+    .black-box:hover{
+        background-color: #272836;
+    }
+
+</style>
+<script>
+
+    window.addEventListener("resize",function(){
+        if(window.innerWidth <= 900){
+            document.querySelector('#bg-vid').classList.add('hidden');
+        }
+        else{
+            document.querySelector('#bg-vid').classList.remove('hidden');
+        }
+    });
+
+
+</script>
+</html> <!-- Modal -->
+<div class="modal fade" id="dance-modal" tabindex="-1" role="dialog" aria-labelledby="dance-modal" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <!--<div class="modal-header">-->
+                <!--<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
+                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+                    <!--<span aria-hidden="true">&times;</span>-->
+                <!--</button>-->
+            <!--</div>-->
+            <div class="modal-body">
+                <h2 class="fn1 fw">Dance</h2>
+
+<div class="container">
+    <div class="row pt-5">
+        <div class="col-xl-4 col-6  p-2">
+            <a class="nos" href="/event/oorja.html">
+
+            <div class="black-box p-3">
+                <h4 class="fn1 fc-1">Oorja</h4>
+                <h5 class="f2 fw">The Western Group
+                    Dance Competition</h5>
+            </div>
+            </a>
+        </div>
+        <div class="col-xl-4 col-6  p-2">
+            <a class="nos" href="/event/Mudra.html">
+            <div class="black-box p-3">
+                <h4 class="fn1 fc-1">Mudra</h4>
+                <h5 class="f2 fw">The choreography competition</h5>
+            </div>
+            </a>
+        </div>
+
+        <div class="col-xl-4 col-6  p-2">
+            <a class="nos" href="/event/Kalakriti.html">
+            <div class="black-box p-3">
+                <h4 class="fn1 fc-1">Kalakriti</h4>
+                <h5 class="f2 fw">The Folk Dance competition</h5>
+            </div>
+            </a>
+        </div>
+
+        <div class="col-xl-4 col-6  p-2">
+            <a class="nos" href="/event/zephyr.html">
+            <div class="black-box p-3">
+                <h4 class="fn1 fc-1">Zephyr</h4>
+                <h5 class="f2 fw">Solo/Duet Dance competition</h5>
+            </div>
+            </a>
+        </div>
+
+        <div class="col-xl-4 col-6  p-2">
+            <a class="nos" href="/event/step-up.html">
+            <div class="black-box p-3">
+
+                <h4 class="fn1 fc-1">Step Up</h4>
+                <h5 class="f2 fw">The Street Dance competition</h5>
+            </div>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<div class="modal fade" id="music-modal" tabindex="-1" role="dialog" aria-labelledby="dance-modal" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <!--<div class="modal-header">-->
+                <!--<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
+                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+                    <!--<span aria-hidden="true">&times;</span>-->
+                <!--</button>-->
+            <!--</div>-->
+            <div class="modal-body">
+                <h2 class="fn1 fw">Music</h2>
+
+<div class="container">
+    <div class="row pt-5">
+        <div class="col-xl-4 col-6  p-2">
+            <a class="nos" href="/event/voiceofmoksha.html">
+            <div class="black-box p-3">
+                <h4 class="fn1 fc-1">Voice</h4>
+                <h5 class="f2 fw">Voice of Moksha</h5>
+            </div>
+            </a>
+        </div>
+        <div class="col-xl-4 col-6  p-2">
+            <a class="nos" href="/event/melody.html">
+            <div class="black-box p-3">
+                <h4 class="fn1 fc-1">Melody</h4>
+                <h5 class="f2 fw">The Western Solo Singing Competition</h5>
+            </div>
+            </a>
+        </div>
+
+        <div class="col-xl-4 col-6  p-2">
+            <a class="nos" href="/event/symphony.html" >
+            <div class="black-box p-3">
+                <h4 class="fn1 fc-1">Symphony</h4>
+                <h5 class="f2 fw"> The Instrumental Duo/Trio Competition</h5>
+            </div>
+            </a>
+        </div>
+
+        <div class="col-xl-4 col-6  p-2">
+            <a class="nos" href="/event/harmony.html" >
+            <div class="black-box p-3">
+                <h4 class="fn1 fc-1">Harmony</h4>
+                <h5 class="f2 fw">The Western Acapella Competition</h5>
+            </div>
+            </a>
+        </div>
+
+        <div class="col-xl-4 col-6  p-2">
+            <a class="nos" href="/event/tarang.html">
+            <div class="black-box p-3">
+                <h4 class="fn1 fc-1">Tarang</h4>
+                <h5 class="f2 fw">Indian Group singing competition</h5>
+            </div>
+            </a>
+        </div>
+
+        <div class="col-xl-4 col-6  p-2">
+            <a class="nos" href="/event/Avalanche.html">
+            <div class="black-box p-3">
+                <h4 class="fn1 fc-1">Avalanche</h4>
+                <h5 class="f2 fw">Battle of Bands</h5>
+            </div>
+            </a>
+        </div>
+
+        <div class="col-xl-4 col-6  p-2">
+            <div class="black-box p-3">
+                <h4 class="fn1 fc-1">Nishad</h4>
+                <h5 class="f2 fw">The Unplugged Night</h5>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="drama-modal" tabindex="-1" role="dialog" aria-labelledby="dance-modal" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <!--<div class="modal-header">-->
+                <!--<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
+                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+                    <!--<span aria-hidden="true">&times;</span>-->
+                <!--</button>-->
+            <!--</div>-->
+            <div class="modal-body">
+                <h2 class="fn1 fw">Drama</h2>
+
+<div class="container">
+    <div class="row pt-5">
+        <div class="col-xl-4 col-6  p-2">
+            <a class="nos" href="/event/Soch.html">
+            <div class="black-box p-3">
+
+                <h4 class="fn1 fc-1">Soch</h4>
+                <h5 class="f2 fw">The Street Play Competition</h5>
+            </div>
+            </a>
+        </div>
+        <div class="col-xl-4 col-6  p-2">
+            <a class="nos" href="/event/Parwaaz.html">
+            <div class="black-box p-3">
+
+                <h4 class="fn1 fc-1">Parwaaz</h4>
+                <h5 class="f2 fw">The Stage Play Competition</h5>
+            </div>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="modal fade" id="inf-modal" tabindex="-1" role="dialog" aria-labelledby="dance-modal" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <!--<div class="modal-header">-->
+                <!--<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
+                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+                    <!--<span aria-hidden="true">&times;</span>-->
+                <!--</button>-->
+            <!--</div>-->
+            <div class="modal-body">
+                <h2 class="fn1 fw">Informals</h2>
+
+<div class="container">
+    <div class="row pt-5">
+        <div class="col-xl-4 col-6  p-2">
+            <a class="nos" href="/event/kismat-konnection.html">
+            <div class="black-box p-3">
+                <h4 class="fn1 fc-1">Kismat Konnection</h4>
+                <h5 class="f2 fw">The Blind Dating Event</h5>
+            </div>
+            </a>
+        </div>
+        <div class="col-xl-4 col-6  p-2">
+            <div class="black-box p-3">
+                <h4 class="fn1 fc-1">Nakshatra</h4>
+                <!--<h5 class="f2 fw">The Stage Play Competition</h5>-->
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-6  p-2">
+            <a class="nos" href="/event/evening_ball.html">
+            <div class="black-box p-3">
+                <h4 class="fn1 fc-1">Evening Ball</h4>
+                <!--<h5 class="f2 fw">The Stage Play Competition</h5>-->
+            </div>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="tal-modal" tabindex="-1" role="dialog" aria-labelledby="dance-modal" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <!--<div class="modal-header">-->
+                <!--<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
+                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+                    <!--<span aria-hidden="true">&times;</span>-->
+                <!--</button>-->
+            <!--</div>-->
+            <div class="modal-body">
+                <h2 class="fn1 fw">Talent Show</h2>
+
+<div class="container">
+    <div class="row pt-5">
+        <div class="col-xl-4 col-6  p-2">
+            <a class="nos" href="/event/rouge.html">
+            <div class="black-box p-3">
+                <h4 class="fn1 fc-1">Rouge</h4>
+                <!--<h5 class="f2 fw">The Blind Dating Event</h5>-->
+            </div>
+            </a>
+        </div>
+        <div class="col-xl-4 col-6  p-2">
+            <a class="nos" href="/event/NGT.html">
+            <div class="black-box p-3">
+                <h4 class="fn1 fc-1">Nsit Got Talent</h4>
+                <!--<h5 class="f2 fw">The Stage Play Competition</h5>-->
+            </div>
+            </a>
+        </div>
+
+        <div class="col-xl-4 col-6  p-2">
+            <a class="nos" href="/event/mr-and-ms-moksha.html">
+            <div class="black-box p-3">
+                <h4 class="fn1 fc-1">Mr. and Ms. Moksha</h4>
+                <!--<h5 class="f2 fw">The Stage Play Competition</h5>-->
+            </div>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="lit-modal" tabindex="-1" role="dialog" aria-labelledby="dance-modal" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <!--<div class="modal-header">-->
+                <!--<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
+                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+                    <!--<span aria-hidden="true">&times;</span>-->
+                <!--</button>-->
+            <!--</div>-->
+            <div class="modal-body">
+                <h2 class="fn1 fw">Literary</h2>
+
+<div class="container">
+    <div class="row pt-5">
+        <div class="col-xl-4 col-6  p-2">
+            <a class="nos" href="/event/Alfaaz.html"><div class="black-box p-3">
+                <h4 class="fn1 fc-1">Alfaaz</h4>
+                <h5 class="f2 fw">Poetry Recitation Competition</h5>
+            </div></a>
+        </div>
+
+        <div class="col-xl-4 col-6  p-2">
+            <a class="nos" href="/event/verbumdomini.html">
+                <div class="black-box p-3">
+                <h4 class="fn1 fc-1">Verbum Domini</h4>
+                <h5 class="f2 fw">The Literary Festival</h5>
+            </div></a>
+        </div>
+        <div class="col-xl-4 col-6  p-2">
+            <a class="nos" href="/event/Afsana.html">
+            <div class="black-box p-3">
+                <h4 class="fn1 fc-1">Afsaana</h4>
+                <h5 class="f2 fw">Creative Writing</h5>
+            </div>
+            </a>
+        </div>
+
+
+        <div class="col-xl-4 col-6  p-2">
+            <a class="nos" href="/event/Brahmastra.html">
+            <div class="black-box p-3">
+                <h4 class="fn1 fc-1">Brahmastra</h4>
+                <h5 class="f2 fw">Mythological Quiz</h5>
+            </div>
+            </a>
+        </div>
+
+        <div class="col-xl-4 col-6  p-2">
+            <a class="nos" href="/event/open-mic.html">
+
+            <div class="black-box p-3">
+                <h4 class="fn1 fc-1">Open Mic</h4>
+                <!--<h5 class="f2 fw">Mythological Quiz</h5>-->
+            </div>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
