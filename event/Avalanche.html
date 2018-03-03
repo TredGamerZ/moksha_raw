@@ -26,21 +26,48 @@
     <body class="bc-3">
     <style>
         .bc-3{
-            background-color: #212f50;
+            background-color: #1e253e;
         }
         .fw{
             color: white!important;
         }
-.black-box{
-    background-color: #181a31;
-}
+        .black-box{
+            background-color: #181a31;
+        }
+        .overy{
+            overflow-y: scroll !important;
+            height: 100% !important;
+        }
     </style>
+    <script>
+        $(document).ready(function () {
+            fow();
+        });
+        function fow() {
+            if(window.innerWidth >= 900){
+                document.querySelector('#bg-vid').classList.add('overy');
+            }
+            else{
+                document.querySelector('#bg-vid').classList.remove('overy');
+            }
+        }
+        window.addEventListener("resize",function(){
+            if(window.innerWidth >= 900){
+                document.querySelector('#bg-vid').classList.add('overy');
+            }
+            else{
+                document.querySelector('#bg-vid').classList.remove('overy');
+            }
+        });
 
-    <div class="container w-100 h-100" style="overflow: hidden">
+
+    </script>
+    <div class="container w-100 h-100" >
 
 
-            <div class="row h-100" >
-                <div class="col-xl-6 col-lg-6 col-md-12 col-12 p-5 h-100" style="background-color: #1e253e;overflow-y: scroll">
+        <div class="row h-100" >
+            <div class="col-xl-6 col-lg-6 col-md-12 col-12 p-5 " id="bg-vid" style="background-color: #1e253e;">
+
                     <h1 class="fn1 mb-0 fw">AVALANCHE <br></h1>
                     <h3 class="fn1 c-theme-2 mt-0"><small>The Battle of Bands</small></h3>
 
