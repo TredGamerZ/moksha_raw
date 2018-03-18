@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f148d350-f18d-41c7-af53-cedf8f777c58" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/seek.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/Brahmastra.html" afterPath="$PROJECT_DIR$/event/Brahmastra.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/MGT.html" afterPath="$PROJECT_DIR$/event/MGT.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/harmony.html" afterPath="$PROJECT_DIR$/event/harmony.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/khayal.html" afterPath="$PROJECT_DIR$/event/khayal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/melody.html" afterPath="$PROJECT_DIR$/event/melody.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/open-mic.html" afterPath="$PROJECT_DIR$/event/open-mic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/shatranj.html" afterPath="$PROJECT_DIR$/event/shatranj.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/symphony.html" afterPath="$PROJECT_DIR$/event/symphony.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/tarang.html" afterPath="$PROJECT_DIR$/event/tarang.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/voiceofmoksha.html" afterPath="$PROJECT_DIR$/event/voiceofmoksha.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -32,7 +21,27 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="symphony.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="865" column="0" lean-forward="true" selection-start-line="865" selection-start-column="0" selection-end-line="865" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#video#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#6041#6047#0" expanded="true" />
+                <element signature="e#6048#6054#0" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="symphony.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/event/symphony.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="419">
@@ -138,7 +147,6 @@
         <option value="$PROJECT_DIR$/event/Shatranj.html" />
         <option value="$PROJECT_DIR$/event/seek.html" />
         <option value="$PROJECT_DIR$/event/act.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/event/shaam.html" />
         <option value="$PROJECT_DIR$/event/Brahmastra.html" />
         <option value="$PROJECT_DIR$/event/khayal.html" />
@@ -149,6 +157,7 @@
         <option value="$PROJECT_DIR$/event/voiceofmoksha.html" />
         <option value="$PROJECT_DIR$/event/tarang.html" />
         <option value="$PROJECT_DIR$/event/symphony.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -188,20 +197,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Moksha_raw" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Moksha_raw" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Moksha_raw" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="event" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -373,12 +368,12 @@
       <workItem from="1521053718681" duration="1902000" />
       <workItem from="1521260625483" duration="1467000" />
       <workItem from="1521372619120" duration="1113000" />
-      <workItem from="1521392235910" duration="3528000" />
+      <workItem from="1521392235910" duration="3743000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63680000" />
+    <option name="totallyTimeSpent" value="63895000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -714,24 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="870" column="22" lean-forward="true" selection-start-line="870" selection-start-column="22" selection-end-line="870" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#video#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#6041#6047#0" expanded="true" />
-            <element signature="e#6048#6054#0" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/event/karaoke.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -834,6 +811,24 @@
         <state relative-caret-position="419">
           <caret line="120" column="0" lean-forward="true" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="865" column="0" lean-forward="true" selection-start-line="865" selection-start-column="0" selection-end-line="865" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#video#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#6041#6047#0" expanded="true" />
+            <element signature="e#6048#6054#0" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
