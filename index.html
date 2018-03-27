@@ -72,41 +72,6 @@
             </div>
         </nav>
 
-        <script>
-            // Set the date we're counting down to
-            var countDownDate = new Date("March 26, 2018 09:00:00").getTime();
-
-            // Update the count down every 1 second
-            var x = setInterval(function() {
-
-                // Get todays date and time
-                var now = new Date().getTime();
-
-                // Find the distance between now an the count down date
-                var distance = countDownDate - now;
-
-                // Time calculations for days, hours, minutes and seconds
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                // Output the result in an element with id="demo"
-                document.getElementById("countdown").innerHTML =
-                    '<div class="timer"><div><h2>Days</h2><hr><span class="num">' + days + '</span></div>' +
-                    '<div><h2>Hours</h2><hr><span class="num">' + hours + '</span></div>' +
-                    '<div><h2>Minutes</h2><hr><span class="num">' + minutes + '</span></div>' +
-                    '<div><h2>Seconds</h2><hr><span class="num">' + seconds + '</span></div></div>';
-
-
-
-                // If the count down is over, write some text
-                if (distance < 0) {
-                    clearInterval(x);
-                    document.getElementById("demo").innerHTML = "EXPIRED";
-                }
-            }, 1000);
-        </script>
         <div class="row justify-content-center align-items-center w-100 " style="color: white">
             <div class="col-xl-8 col-11 col-lg-10 col-md-10 pb-5 mb-5 text-center">
                 <!--<h1 class="fn1 display-3">MOKSHA 18</h1>-->
@@ -123,8 +88,8 @@
         </div>
     </div>
 
-    <div class="container" style="background-color: white" id="about">
-         <div class="row justify-content-center py-5 my-5">
+    <div class="container-fluid" style="background-color: white" id="about">
+         <div class="row justify-content-center py-5">
              <div class="col-xl-8 col-lg-8 col-md-10 col-12">
                 <h1 class="fn1 c-theme-1">
                     About Moksha
